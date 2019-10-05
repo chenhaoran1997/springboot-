@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class IndexController {
 
+    //指定路由
     @GetMapping("/")
     public String Index(){
+        //返回templetes中的页面
         return "index";
     }
 }
