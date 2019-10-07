@@ -24,10 +24,18 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         
-        <!--Serving Web Content with Spring MVC-->
+        <!--Serving Web Content with Spring MVC 模板引擎 thymeleaf-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!-- 获取连接池依赖 -->
+        <!--https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql.html#boot-features-connect-to-production-database        -->
+        <!--31.1.2 Connection to a Production Database -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
 
         <dependency>
@@ -50,7 +58,24 @@
             <version>1.2.60</version>
         </dependency>
 
+        <!--H2数据库引入-->
+        <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.198</version>
+        </dependency>
+
+
+        <!--springboot mybatis引入-->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.0</version>
+        </dependency>
     </dependencies>
+
+
 
     <build>
         <plugins>
